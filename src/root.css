@@ -1,0 +1,57 @@
+:root {
+  --color-surface: #fff;
+  --color-text: #111;
+  --color-border: #dedede;
+  --color-placeholder: #c6c6c6;
+  --color-divider: #ededed;
+  --color-primary: #315723;
+  --color-link: #0647ff;
+  --color-link-secondary: #123da5;
+
+  --font-family-base: Arial, Helvetica, sans-serif;
+  --font-size-title: clamp(16px, 2vw, 32px);
+  --font-size-label: clamp(7px, 0.85vw, 14px);
+  --font-size-input: clamp(6px, 0.7vw, 12px);
+  --font-size-button: clamp(7px, 0.75vw, 13px);
+  --font-size-divider: clamp(7px, 0.8vw, 13px);
+  --font-size-social: clamp(7px, 0.8vw, 14px);
+  --font-size-secondary: clamp(8px, 0.9vw, 16px);
+  --font-weight-semibold: 600;
+  --line-height-title: 1.25;
+  --line-height-body: 1.2;
+
+  --page-columns: 1fr 1fr;
+  --page-min-height: 100vh;
+  --content-left: 22.2%;
+  --content-width: 53%;
+  --signup-content-top: 20%;
+  --login-content-top: 22.5%;
+  --flower-top: 9%;
+  --flower-right: 6%;
+  --flower-width: 96%;
+
+  --space-subtitle-top: 1.1vh;
+  --space-form-top: 6.5vh;
+  --space-field-gap: 2.4vh;
+  --space-label-bottom: 0.5vh;
+  --space-input-inline: 0.7vw;
+  --space-checkbox-gap: 0.4vw;
+  --space-checkbox-top: 2.2vh;
+  --space-submit-top: 2.7vh;
+  --space-divider-gap: 0.7vw;
+  --space-divider-top: 5.9vh;
+  --space-social-gap: 1.5vw;
+  --space-social-top: 6.2vh;
+  --space-social-inner-gap: 0.5vw;
+  --space-social-inline: 0.4vw;
+  --space-account-top: 2.3vh;
+  --space-account-link-left: 0.3vw;
+
+  --border-width: 1px;
+  --radius-control: 0.6vw;
+  --radius-social: 0.7vw;
+  --size-input-height: clamp(17px, 2.15vw, 34px);
+  --size-button-height: clamp(18px, 2.15vw, 36px);
+  --size-checkbox: clamp(7px, 0.8vw, 13px);
+  --size-social-icon: clamp(12px, 1.4vw, 24px);
+}

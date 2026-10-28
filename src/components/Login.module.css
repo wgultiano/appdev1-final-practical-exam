@@ -1,10 +1,10 @@
 .page {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: var(--page-columns);
   width: 100%;
-  min-height: 100vh;
+  min-height: var(--page-min-height);
   overflow: hidden;
-  background: #fff;
+  background: var(--color-surface);
 }
 
 .left {
@@ -14,50 +14,50 @@
 
 .content {
   position: absolute;
-  top: 22.5%;
-  left: 22.2%;
-  width: 53%;
+  top: var(--login-content-top);
+  left: var(--content-left);
+  width: var(--content-width);
 }
 
 .title {
   margin: 0;
-  color: #111;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(16px, 2vw, 32px);
-  font-weight: 600;
-  line-height: 1.25;
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-title);
 }
 
 .subtitle {
-  margin: 1.1vh 0 0;
-  color: #111;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(8px, 0.9vw, 16px);
-  line-height: 1.2;
+  margin: var(--space-subtitle-top) 0 0;
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-secondary);
+  line-height: var(--line-height-body);
 }
 
 .form {
-  margin-top: 6.5vh;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: var(--space-form-top);
+  font-family: var(--font-family-base);
 }
 
 .field + .field {
-  margin-top: 2.4vh;
+  margin-top: var(--space-field-gap);
 }
 
 .field label {
   display: block;
-  margin-bottom: 0.5vh;
-  color: #111;
-  font-size: clamp(7px, 0.85vw, 14px);
-  line-height: 1.2;
+  margin-bottom: var(--space-label-bottom);
+  color: var(--color-text);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-body);
 }
 
 .passwordHeading {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 0.5vh;
+  margin-bottom: var(--space-label-bottom);
 }
 
 .passwordHeading label {
@@ -65,9 +65,9 @@
 }
 
 .forgotPassword {
-  color: #123da5;
-  font-size: clamp(6px, 0.7vw, 12px);
-  line-height: 1.2;
+  color: var(--color-link-secondary);
+  font-size: var(--font-size-input);
+  line-height: var(--line-height-body);
   text-decoration: none;
 }
 
@@ -80,128 +80,128 @@
   box-sizing: border-box;
   display: block;
   width: 100%;
-  height: clamp(17px, 2.15vw, 34px);
-  padding: 0 0.7vw;
-  border: 1px solid #dedede;
-  border-radius: 0.6vw;
-  background: #fff;
-  color: #111;
+  height: var(--size-input-height);
+  padding: 0 var(--space-input-inline);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  color: var(--color-text);
   font: inherit;
-  font-size: clamp(6px, 0.7vw, 12px);
+  font-size: var(--font-size-input);
 }
 
 .field input::placeholder {
-  color: #c6c6c6;
+  color: var(--color-placeholder);
 }
 
 .agreement {
   display: flex;
   align-items: center;
-  gap: 0.4vw;
-  margin-top: 2.2vh;
-  color: #111;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(6px, 0.7vw, 12px);
-  line-height: 1.2;
+  gap: var(--space-checkbox-gap);
+  margin-top: var(--space-checkbox-top);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-input);
+  line-height: var(--line-height-body);
 }
 
 .agreement input {
-  width: clamp(7px, 0.8vw, 13px);
-  height: clamp(7px, 0.8vw, 13px);
+  width: var(--size-checkbox);
+  height: var(--size-checkbox);
   margin: 0;
-  accent-color: #315723;
+  accent-color: var(--color-primary);
 }
 
 .loginButton {
   display: block;
   width: 100%;
-  height: clamp(18px, 2.15vw, 36px);
-  margin-top: 2.7vh;
+  height: var(--size-button-height);
+  margin-top: var(--space-submit-top);
   border: 0;
-  border-radius: 0.6vw;
-  background: #315723;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(7px, 0.75vw, 13px);
-  font-weight: 600;
+  border-radius: var(--radius-control);
+  background: var(--color-primary);
+  color: var(--color-surface);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
 }
 
 .bottomSection {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-base);
 }
 
 .divider {
   display: flex;
   align-items: center;
-  gap: 0.7vw;
-  margin-top: 5.9vh;
-  color: #111;
-  font-size: clamp(7px, 0.8vw, 13px);
-  line-height: 1.2;
+  gap: var(--space-divider-gap);
+  margin-top: var(--space-divider-top);
+  color: var(--color-text);
+  font-size: var(--font-size-divider);
+  line-height: var(--line-height-body);
 }
 
 .divider::before,
 .divider::after {
   content: '';
   flex: 1;
-  border-top: 1px solid #ededed;
+  border-top: var(--border-width) solid var(--color-divider);
 }
 
 .socialButtons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5vw;
-  margin-top: 6.2vh;
+  grid-template-columns: var(--page-columns);
+  gap: var(--space-social-gap);
+  margin-top: var(--space-social-top);
 }
 
 .socialButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5vw;
-  height: clamp(18px, 2.15vw, 36px);
-  padding: 0 0.4vw;
-  border: 1px solid #dedede;
-  border-radius: 0.7vw;
-  background: #fff;
-  color: #111;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(7px, 0.8vw, 14px);
+  gap: var(--space-social-inner-gap);
+  height: var(--size-button-height);
+  padding: 0 var(--space-social-inline);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-social);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-social);
   white-space: nowrap;
   cursor: pointer;
 }
 
 .socialButton img {
   display: block;
-  width: clamp(12px, 1.4vw, 24px);
-  height: clamp(12px, 1.4vw, 24px);
+  width: var(--size-social-icon);
+  height: var(--size-social-icon);
 }
 
 .accountPrompt {
-  margin: 2.3vh 0 0;
-  color: #111;
-  font-size: clamp(8px, 0.9vw, 16px);
-  line-height: 1.2;
+  margin: var(--space-account-top) 0 0;
+  color: var(--color-text);
+  font-size: var(--font-size-secondary);
+  line-height: var(--line-height-body);
   text-align: center;
 }
 
 .signUpText {
-  margin-left: 0.3vw;
-  color: #0647ff;
+  margin-left: var(--space-account-link-left);
+  color: var(--color-link);
 }
 
 .right {
   position: relative;
-  min-height: 100vh;
+  min-height: var(--page-min-height);
 }
 
 .flower {
   position: absolute;
-  top: 9%;
-  right: 6%;
+  top: var(--flower-top);
+  right: var(--flower-right);
   display: block;
-  width: 96%;
+  width: var(--flower-width);
   max-width: none;
   height: auto;
 }
