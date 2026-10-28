@@ -1,16 +1,4 @@
-# React + Vite
+## FINAL PRACTICAL EXAM REFLECTION
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+While doing this practical exam, nakaramdam ako ng excitement and enjoyment sa buong process. Hindi ko pa man pa ganoon naiintindihan yung ibang parts pero ang important is may nakukuha ako rito at willing akong matutunan pa yung ibang aspects and concepts. Lalo na sa part ng pag set up ng tailwind and shadcn, kasi doon talaga ako natagalan. And masasabi ko rin na hindi pala sya ganun kadaling makuha kahit pa sabihing may help from AI. But, through this practical exam, masasabi kong isa rin syang challenge na kailangan kong ma overcome at matutunan. Sa totoo lang, mas na e-enjoy ko talaga kapag nasa point ako where kailangan kong i-redesign o gayahin yung binigay na reference lalo na ako yung front-end din sa team namin. Overall, this practical exam is not just an exam for me that needed to be done to passed, but also, an opportunity for me rin na ma-improve ko pa yung skills and abilities ko. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
