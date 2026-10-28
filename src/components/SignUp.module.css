@@ -45,7 +45,7 @@
   line-height: var(--line-height-body);
 }
 
-.field input {
+.input {
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -59,7 +59,7 @@
   font-size: var(--font-size-input);
 }
 
-.field input::placeholder {
+.input::placeholder {
   color: var(--color-placeholder);
 }
 

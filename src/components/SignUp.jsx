@@ -1,6 +1,7 @@
 import flower from '../assets/blossom-flower.svg'
 import googleLogo from '../assets/icons-google-logo.svg'
 import appleLogo from '../assets/icons-apple-logo.svg'
+import { Input } from './ui/input.jsx'
 import styles from './SignUp.module.css'
 
 function SignUp() {
@@ -12,34 +13,37 @@ function SignUp() {
           <form className={styles.form} onSubmit={(event) => event.preventDefault()}>
             <div className={styles.field}>
               <label htmlFor="signup-name">Name</label>
-              <input 
-                id="signup-name" 
-                name="name" 
-                type="text" 
-                placeholder="Enter your name" 
-                autoComplete="name" 
+              <Input
+                className={styles.input}
+                id="signup-name"
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                autoComplete="name"
                 required />
             </div>
 
             <div className={styles.field}>
               <label htmlFor="signup-email">Email address</label>
-              <input 
-                id="signup-email" 
-                name="email" 
-                type="email" 
-                placeholder="Enter your email" 
-                autoComplete="email" 
+              <Input
+                className={styles.input}
+                id="signup-email"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                autoComplete="email"
                 required />
             </div>
 
             <div className={styles.field}>
               <label htmlFor="signup-password">Password</label>
-              <input 
-                id="signup-password" 
-                name="password" 
-                type="password" 
-                placeholder="Enter your password" 
-                autoComplete="new-password" 
+              <Input
+                className={styles.input}
+                id="signup-password"
+                name="password"
+                type="password"
+                placeholder="Enter your password"
+                autoComplete="new-password"
                 required />
             </div>
 
