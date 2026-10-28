@@ -53,6 +53,29 @@
   line-height: 1.2;
 }
 
+.passwordHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5vh;
+}
+
+.passwordHeading label {
+  margin-bottom: 0;
+}
+
+.forgotPassword {
+  color: #123da5;
+  font-size: clamp(6px, 0.7vw, 12px);
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.forgotPassword:hover,
+.forgotPassword:focus-visible {
+  text-decoration: underline;
+}
+
 .field input {
   box-sizing: border-box;
   display: block;
@@ -89,11 +112,7 @@
   accent-color: #315723;
 }
 
-.terms {
-  text-decoration: underline;
-}
-
-.signupButton {
+.loginButton {
   display: block;
   width: 100%;
   height: clamp(18px, 2.15vw, 36px);
