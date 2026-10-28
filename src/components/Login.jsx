@@ -8,7 +8,8 @@ function Login() {
     <main className={styles.page}>
       <section className={styles.left}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Get Started Now</h1>
+          <h1 className={styles.title}>Welcome back!</h1>
+          <p className={styles.subtitle}>Enter your Credentials to access your account</p>
           <form className={styles.form} onSubmit={(event) => event.preventDefault()}>
             <div className={styles.field}>
               <label htmlFor="signup-name">Name</label>
