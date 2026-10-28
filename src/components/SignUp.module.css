@@ -1,0 +1,27 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.left {
+  min-width: 0;
+}
+
+.right {
+  position: relative;
+  min-height: 100vh;
+}
+
+.flower {
+  position: absolute;
+  top: 9%;
+  right: 6%;
+  display: block;
+  width: 96%;
+  max-width: none;
+  height: auto;
+}
